@@ -1,0 +1,829 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+    <title>Michael Chu's Resume</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        /* Utils */
+        /*----- Colors -----*/
+        /*----- Fonts -----*/
+        /*----- Dimensions and sizes -----*/
+        /* Base */
+        @font-face {
+            font-family: 'Josefin Sans';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04zwV_pQ1T3xN3K1c3sB361us.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Josefin Sans';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z306qf9KHRHwsVx7iw5MXmY.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v11/nj47mAZe0mYUIySgfn0wpQ.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/DvlFBScY1r-FMtZSYIYoYw.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 300;
+            src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v11/2HG_tEPiQ4Z6795cGfdivKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/LqowQDslGv4DmUBAfWa2Vw.ttf) format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYEKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+        }
+
+        body {
+            font-family: "Lato", Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            background: #f8f8f8;
+            margin: 50px 0 100px;
+            letter-spacing: .3px;
+            color: #39424B;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        h1 {
+            font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            letter-spacing: .5px;
+        }
+
+        h3 {
+            font-family: "Lato", Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            letter-spacing: .4px;
+        }
+
+        h3.bold {
+            font-weight: 700;
+        }
+
+        h4 {
+            font-family: "Lato", Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            font-size: 12px;
+        }
+
+        h4.bold {
+            font-weight: 700;
+        }
+
+        h5 {
+            font-family: "Lato", Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            font-size: 11px;
+        }
+
+        h5.italic {
+            font-style: italic;
+        }
+
+        h6 {
+            font-family: "Lato", Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            font-size: 10px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        a:hover {
+            color: #2895F1;
+        }
+
+        a .fa-external-link {
+            font-size: 10px;
+            vertical-align: text-top;
+        }
+
+        p,
+        li {
+            font-size: 11px;
+        }
+
+        blockquote {
+            font-size: 11px;
+            font-family: "Lato", Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            margin: 10px 25px;
+        }
+
+        em {
+            color: #999;
+        }
+
+        ul {
+            margin: 10px 0 0;
+            -webkit-padding-start: 25px;
+        }
+
+        ul li {
+            padding-left: 10px;
+        }
+
+        ul.minimal {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.minimal li {
+            margin-bottom: 3px;
+            padding-left: 0;
+        }
+
+        ul.minimal li.subSkills {
+            margin-bottom: 3px;
+            padding-left: 20;
+            color: #999;
+        }
+
+        ul.two-column {
+            -webkit-column-count: 2;
+            -webkit-column-gap: 28px;
+            -moz-column-count: 2;
+            column-count: 2;
+            -moz-column-gap: 28px;
+            column-gap: 28px;
+        }
+
+        ul.two-column li {
+            padding-left: 0;
+        }
+
+        @page {
+            size: A1;
+        }
+
+        .container {
+            padding-top: 20px;
+        }
+
+        .keyline {
+            width: 45px;
+            margin: 8px 0 10px;
+            border-top: 1px solid #56817A;
+        }
+
+        .pull-left {
+            float: left;
+        }
+
+        .pull-right {
+            float: right;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .profile-pic {
+            margin-top: -5px;
+            margin-right: 18px;
+        }
+
+        .profile-pic img {
+            height: 52px;
+            width: 52px;
+            border-radius: 50%;
+            border: 2px solid #56817A;
+        }
+
+        .summary {
+            margin: 5px 0 5px;
+        }
+
+        /* Layouts */
+        .page {
+            background: white;
+            width: 612px;
+            min-height: 792px;
+            display: block;
+            margin: 0 auto;
+            border-top: 10px solid #56817A;
+            padding: 36px 36px 30px 34px;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .page:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .left-column {
+            float: left;
+            width: 160px;
+            margin-right: 20px;
+            word-wrap: break-word;
+        }
+
+        .right-column {
+            width: auto;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+            }
+
+            .page {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 36px 0 30px;
+                box-shadow: none;
+            }
+
+            .page .resume-header,
+            .page .resume-content {
+                padding: 0 22px 0 34px;
+            }
+
+            .container {
+                page-break-inside: avoid;
+            }
+
+            .work-container .item {
+                page-break-inside: avoid;
+            }
+
+            .fa-external-link {
+                display: none;
+            }
+        }
+
+        /* Components */
+        .info-tag-container {
+            margin-bottom: 5px;
+        }
+
+        .info-tag-container .fa {
+            font-size: 14px;
+            width: 12px;
+            margin-right: 5px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .info-tag-container .fa.fa-map-marker {
+            font-size: 16px;
+        }
+
+        .info-tag-container .fa.fa-mobile {
+            font-size: 18px;
+        }
+
+        .info-tag-container .fa.fa-envelope-o {
+            font-size: 12px;
+        }
+
+        .info-tag-container .fa.fa-desktop {
+            font-size: 11px;
+        }
+
+        .info-tag-container .fa.fa-external-link {
+            width: auto;
+            font-size: inherit;
+            vertical-align: text-top;
+        }
+
+        .info-tag-container .info-text {
+            font-size: 9px;
+            display: inline-block;
+            vertical-align: middle;
+            width: 139px;
+        }
+
+        .references-container .fa {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="resume" class="page">
+        <header class="resume-header clearfix">
+            <div class="profile-header pull-left">
+                <h1>Michael Chu</h1>
+                <h2>Technical Project Manager</h2>
+            </div>
+            <!-- <div class="profile-pic pull-right">
+                <img src="" alt="profile-pic">
+            </div> -->
+        </header>
+        <div class="resume-content">
+            <aside class="left-column">
+                <div class="container about-container">
+                    <div class="title">
+                        <h3>About</h3>
+                        <div class="keyline"></div>
+                    </div>
+                    <div class="info-tag-container">
+                        <i class="fa fa-map-marker"></i>
+
+                        <h6 class="info-text">1210 N 152nd St.<br>Unit #503<br>Shoreline, Washington WA 98133</h6>
+                    </div>
+                    <div class="info-tag-container">
+                        <i class="fa fa-envelope-o"></i>
+
+                        <h6 class="info-text">
+                            <a href="mailto: mchu187@gmail.com" target="_blank"">mchu187@gmail.com <i class=" fa
+                                fa-external-link" aria-hidden="true"></i></a>
+                        </h6>
+                    </div>
+                    <div class=" info-tag-container">
+                        <i class="fa fa-mobile"></i>
+
+                        <h6 class="info-text">(206) 495-2006</h6>
+                    </div>
+                    <div class="info-tag-container">
+                        <i class="fa fa-desktop"></i>
+
+                        <h6 class="info-text">
+                            <a href="https://www.linkedin.com/in/michael-chu-pmp/" target="_blank">
+                                LinkedIn Profile <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </a>
+                        </h6>
+                    </div>
+                    <!-- <div class="info-tag-container">
+                        <i class="fa fa-twitter"></i>
+
+                        <h6 class="info-text">neutralthoughts</h6>
+                    </div> -->
+                    <!-- <div class="info-tag-container">
+                        <i class="fa fa-soundcloud"></i>
+
+                        <h6 class="info-text">
+                            <a href="https://soundcloud.com/dandymusicnl" target="_blank">
+                                dandymusicnl <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </a>
+                        </h6> -->
+                </div>
+                <div class="skills-container">
+                    <section class="container">
+                        <div class="title">
+                            <h3>Programming Languages</h3>
+                            <div class="keyline"></div>
+                        </div>
+                        <!-- <h4 class="bold">Master</h4> -->
+                        <ul class="minimal">
+                            <li>
+                                <h6>HTML</h6>
+                            </li>
+                            <li>
+                                <h6>CSS</h6>
+                            </li>
+                            <li>
+                                <h6>Javascript</h6>
+                            </li>
+                            <li>
+                                <h6>Python</h6>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- <section class="container">
+                        <div class="title">
+                            <h3>Compression</h3>
+                            <div class="keyline"></div>
+                        </div>
+                        <h4 class="bold">Master</h4>
+                        <ul class="minimal">
+                            <li>
+                                <h6>Mpeg</h6>
+                            </li>
+                            <li>
+                                <h6>MP4</h6>
+                            </li>
+                            <li>
+                                <h6>GIF</h6>
+                            </li>
+                        </ul>
+                    </section> -->
+                </div>
+                <div class="container languages-container">
+                    <div class="title">
+                        <h3>Languages</h3>
+                        <div class="keyline"></div>
+                    </div>
+                    <ul class="minimal">
+                        <li>
+                            <h6>English <em>(Native speaker)</em></h6>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container key skills-container">
+                    <div class="title">
+                        <h3>Key Skills</h3>
+                        <div class="keyline"></div>
+                    </div>
+                    <ul class="minimal">
+                        <li>
+                            <h6>Cross-Functional Teams</h6>
+                        </li>
+                        <li>
+                            <h6>Team Leadership</h6>
+                        </li>
+                        <li>
+                            <h6>Agile Framework</h6>
+                        </li>
+                        <li>
+                            <h6>Scrum</h6>
+                        </li>
+                        <li>
+                            <h6>Stakeholder Engagement</h6>
+                        </li>
+                        <li>
+                            <h6>Risk Management</h6>
+                        </li>
+                        <li>
+                            <h6>Milestone Develeopment</h6>
+                        </li>
+                        <li>
+                            <h6>Budget Planning</h6>
+                        </li>
+                        <h6>Management Software</h6>
+                        </li>
+                        <li class="subSkills">
+                            <h6>Jira</h6>
+                        </li>
+                        <li class="subSkills">
+                            <h6>Asana</h6>
+                        </li>
+                        <li class="subSkills">
+                            <h6>Notion</h6>
+                        </li>
+                        <li>
+                            <h6>Microsoft:</h6>
+                        </li>
+                        <li class="subSkills">
+                            <h6>Project</h6>
+                        </li>
+                        <li class="subSkills">
+                            <h6>Word</h6>
+                        </li>
+                        <li class="subSkills">
+                            <h6>Excel</h6>
+                        </li>
+                        <li class="subSkills">
+                            <h6>PowerPoint</h6>
+                        </li>
+                        <li>
+
+
+                    </ul>
+                </div>
+
+
+                <!-- <div class="container interests-container">
+                    <div class="title">
+                        <h3>Interests</h3>
+                        <div class="keyline"></div>
+                    </div>
+                    <section class="item">
+                        <h4 class="bold">Wildlife</h4>
+                        <ul class="minimal">
+                            <li>Ferrets</li>
+                            <li>Unicorns</li>
+                        </ul>
+                    </section>
+                </div> -->
+        </div>
+        </aside>
+        <div class="right-column">
+            <div class="container summary-container">
+                <div class="title">
+                    <h3>Summary</h3>
+                    <div class="keyline"></div>
+                </div>
+                <p class="summary">
+                    PMP and Agile-certified project manager with 8+ years of experience coordinating the initiation and
+                    long-term success for local and international operations. Emphasis on identifying and anticipating
+                    problems and providing solutions in real time, while providing team members with tools and support
+                    necessary to excel. Successful practices include implementing project specific systems for
+                    communication and organization between key project leaders, standardizing the onboarding/mentoring
+                    of employees, and applying creative and analytical approaches to handling a completely remote work
+                    environment spanning multiple time zones.
+                </p>
+            </div>
+            <div class="container work-container">
+                <div class="title">
+                    <h3>Experience</h3>
+                    <div class="keyline"></div>
+                </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                            <a href="http://clario.com" target="_blank">
+                                Clario <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                            <span class="startDate">08/2023</span>
+                            <span class="endDate"> - Present</span>
+                        </h5>
+                    </div>
+                    <h4>Product Development and Implementation Project Manager</h4>
+
+                    <!-- <p class="summary">Pied Piper is a multi-platform technology based on a proprietary universal
+                        compression algorithm that has consistently fielded high Weisman Scores™ that are not merely
+                        competitive, but approach the theoretical limit of lossless compression.</p>
+ -->
+                    <ul>
+                        <li>Managed the training and implementation of the Clinical Trial Management System for 12
+                            organizations from initiation to completion, including budgeting, scheduling and risk
+                            management or all activities related to each project.</li>
+                        <li>Facilitated regular updates to product design and functionality by communicating clients’
+                            recommendations and requirements to technical team while managing their work in progress.
+                        </li>
+                        <li>Identified and maintained preferred communication channels with stakeholders on every
+                            project to ensure satisfaction and to quickly identify and resolve issues as they came up.
+                        </li>
+                        <li>Managed RAID logs and facilitated communication with other product line project managers
+                            during multi-product implementation projects.</li>
+                        <li>Developed detailed project plans and ensured that projects stayed on schedule by
+                            eliminating scope creep and employing predefined risk management strategies.</li>
+                        <li>Conducted weekly meetings with team members, department heads and senior management to
+                            report on project status.</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                            <a href="https://www.corallabs.io/" target="_blank">
+                                Coral Labs <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                            <span class="startDate">06/2019</span>
+                            <span class="endDate"> - Present</span>
+                        </h5>
+                    </div>
+                    <h4>Agile Program Manager / Project Manager</h4>
+
+                    <!-- <p class="summary">Pied Piper is a multi-platform technology based on a proprietary universal
+                        compression algorithm that has consistently fielded high Weisman Scores™ that are not merely
+                        competitive, but approach the theoretical limit of lossless compression.</p> -->
+
+                    <ul>
+                        <li>Oversaw global team in development of an augmented reality social application and
+                            provided continuous ground support throughout each project lifecycle.</li>
+                        <li>Guided Agile principles and facilitation skills to ensure 4 departments were working in
+                            an Agile mindset and utilizing Scrum practices.
+                        </li>
+                        <li>Lead 100+ Agile Ceremonies such as Sprint Planning, Daily Standups, Retrospectives,
+                            Story Refinement, and Release Planning.
+                        </li>
+                        <li>Tracked and communicated 15+ projects’ progress to key stakeholders and management
+                            staff.</li>
+                        <li>Removed obstacles and managed risks to enable team efficiency and effectiveness.</li>
+                        <li>Ensured 100% of Scrum activities were tracked, kept up-to-date, and reported.</li>
+                        <li>Identified overall company objectives and developed roadmaps to define timelines,
+                            establish milestones, and achieve project goals.</li>
+                        <li>Coordinated with engineers, product designers, and contractors, and monitored multiple
+                            concurrent departmental projects throughout the duration of product build-out.</li>
+                        <li>Maintained constant communication between key stakeholders and development team to
+                            ensure project clarity and focus.</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">Freelance</h3>
+                        <h5 class="italic pull-right">
+                            <span class="startDate">03/2015</span>
+                            <span class="endDate"> - 05/2019</span>
+                        </h5>
+                    </div>
+                    <h4>Hospitality Project Consultant</h4>
+
+                    <!-- <p class="summary">Pied Piper is a multi-platform technology based on a proprietary universal
+                        compression algorithm that has consistently fielded high Weisman Scores™ that are not merely
+                        competitive, but approach the theoretical limit of lossless compression.</p>
+ -->
+                    <ul>
+                        <li>Successfully consulted on and help launch 7 new bar and restaurant concepts and programs.
+                        </li>
+                        <li>Developed comprehensive project plans from initial design and build out to operations and
+                            cost management.
+                        </li>
+                        <li>Worked with design and construction teams during build out phases, ensuring procurement
+                            quality and adherence to predefined schedules.
+                        </li>
+                        <li>Worked with owners on developing operations systems and documentation and assisted in the
+                            implementation of these systems during launch.
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+            <div class="container certifications-container">
+                <div class="title">
+                    <h3>Certifications</h3>
+                    <div class="keyline"></div>
+                </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                            Agile Certified Practitioner (PMI-ACP)
+                            <!-- <a href="https://www.credly.com/badges/d55a99fe-49a5-484c-a06f-8d26642a8ff3/public_url"
+                                target="_blank">
+                                Agile Certified Practitioner (PMI-ACP) <i class="fa fa-external-link"
+                                    aria-hidden="true"></i>
+                            </a> -->
+                        </h3>
+                        <h5 class="italic pull-right">
+                            <!-- <span class="startDate">01/2012</span> -->
+                            <span class="endDate">02/2023</span>
+                        </h5>
+                    </div>
+                    <h5>Project Management - PMI</h5>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                            <a href="https://www.credly.com/badges/d55a99fe-49a5-484c-a06f-8d26642a8ff3/public_url"
+                                target="_blank">
+                                Project Management Professional (PMP) <i class="fa fa-external-link"
+                                    aria-hidden="true"></i>
+                            </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                            <!-- <span class="startDate">01/2012</span> -->
+                            <span class="endDate">01/2023</span>
+                        </h5>
+                    </div>
+                    <h5>Project Management - PMI</h5>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                            <a href="https://www.credly.com/badges/d99ecec9-63c8-4222-a805-95dcceea1021"
+                                target="_blank">
+                                Google Project Management Certificate <i class="fa fa-external-link"
+                                    aria-hidden="true"></i>
+                            </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                            <!-- <span class="startDate">01/2012</span> -->
+                            <span class="endDate">06/2022</span>
+                        </h5>
+                    </div>
+                    <h5>Google</h5>
+                </section>
+            </div>
+            <div class="container education-container">
+                <div class="title">
+                    <h3>Education</h3>
+                    <div class="keyline"></div>
+                </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                            University of Washington
+                        </h3>
+                        <h5 class="italic pull-right">
+                            <span class="startDate">08/2006</span>
+                            <span class="endDate"> - 06/2010</span>
+                        </h5>
+                    </div>
+                    <h4>Bachelor's Degree - Communications</h4>
+
+                    <!-- <h5>4.0</h5>
+
+                    <ul class="two-column">
+                        <li>DB1101 - Basic SQL</li>
+                        <li>CS2011 - Java Introduction</li>
+                    </ul> -->
+                </section>
+            </div>
+            <!-- <div class="container awards-container">
+                <div class="title">
+                    <h3>Awards</h3>
+                    <div class="keyline"></div>
+                </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                            Digital Compression Pioneer Award
+                        </h3>
+                        <h5 class="italic pull-right">
+                        </h5>
+                    </div>
+                    <h5 class="awarder">Techcrunch</h5>
+
+                    <p class="summary">There is no spoon.</p>
+                </section>
+            </div> -->
+            <!-- <div class="container publications-container">
+                <div class="title">
+                    <h3>Publications</h3>
+                    <div class="keyline"></div>
+                </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h3 class="bold pull-left">
+                            <a href="http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)" target="_blank">
+                                Video compression for 3d media <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </a>
+                        </h3>
+                        <h5 class="italic pull-right">
+                            10/2014
+                        </h5>
+                    </div>
+                    <h5 class="awarder">Hooli</h5>
+
+                    <p class="summary">Innovative middle-out compression algorithm that changes the way we store
+                        data.</p>
+
+                </section>
+            </div> -->
+            <!-- <div class="container references-container">
+                <div class="title">
+                    <h3>References</h3>
+                    <div class="keyline"></div>
+                </div>
+                <section class="item clearfix">
+                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+                    <blockquote>
+                        It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
+                        Company proved that he will be a valuable addition to any company.
+                    </blockquote>
+
+                    <h5 class="pull-right"> — Erlich Bachman</h5>
+                </section>
+            </div>
+        </div>
+        </div> -->
+    </main>
+
+
+</body>
+
+</html>
